@@ -1,14 +1,14 @@
 
-let objetoVidrio = document.querySelector("#Vidrio")
-let objetoPlastico = document.querySelector("#Plastico")
-let objetoLata = document.querySelector("#Lata")
-let objetoPila = document.querySelector("#Pila")
-let objetoBolsa = document.querySelector("#Bolsa")
-let objetoZapatilla = document.querySelector("#Zapatilla")
+let objetoManzanilla = document.querySelector("#Manzanilla")
+let objetoMenta = document.querySelector("#Menta")
+let objetoCilantro = document.querySelector("#Cilantro")
+let objetoAlbahaca = document.querySelector("#Albahaca")
+let objetoPerejil = document.querySelector("#Perejil")
+let objetoOregano = document.querySelector("#Oregano")
 
 
-if(objetoBolsa != null){
-    objetoBolsa.addEventListener("click",
+if(objetoPerejil != null){
+    objetoPerejil.addEventListener("click",
     function mostrarInformacion() {
     
         let contenedor = document.querySelector("#Mensaje")
@@ -16,16 +16,16 @@ if(objetoBolsa != null){
             contenedor.removeChild(contenedor.firstChild);
         }
         let mensaje = document.createTextNode("p")
-        mensaje.textContent = "Nombre: BOLSA DE PLÁSTICO, Tiempo de descomposición: 1000 años"
+        mensaje.textContent = "Nombre: PEREJIL"
         contenedor.appendChild(mensaje);
 
     }
 )
 }
 
-if(objetoVidrio != null){
+if(objetoManzanilla != null){
 
-    objetoVidrio.addEventListener("click",
+    objetoManzanilla.addEventListener("click",
     function mostrarInformacion() {
   
         
@@ -34,7 +34,7 @@ if(objetoVidrio != null){
             contenedorNombre.removeChild(contenedorNombre.firstChild);
         }
         let mensaje = document.createTextNode("p")
-        mensaje.textContent = "Nombre: BOTELLA DE VIDRIO, Tiempo de descomposición: 4000 años"
+        mensaje.textContent = "Nombre: MANZANILLA"
         contenedorNombre.appendChild(mensaje);
         
 
@@ -42,8 +42,8 @@ if(objetoVidrio != null){
 )
 }
 
-if(objetoLata != null){
-    objetoLata.addEventListener("click",
+if(objetoCilantro != null){
+    objetoCilantro.addEventListener("click",
     function mostrarInformacion() {
     
         let contenedorNombre = document.querySelector("#Mensaje")
@@ -51,16 +51,16 @@ if(objetoLata != null){
             contenedorNombre.removeChild(contenedorNombre.firstChild);
         }
         let mensaje = document.createTextNode("p")
-        mensaje.textContent = "Nombre: LATA, Tiempo de descomposición: 10 años"
+        mensaje.textContent = "Nombre: CILANTRO"
         contenedorNombre.appendChild(mensaje);
     
     }
     )
 }
 
-if(objetoPila != null){
+if(objetoAlbahaca != null){
 
-    objetoPila.addEventListener("click",
+    objetoAlbahaca.addEventListener("click",
     function mostrarInformacion() {
     
     
@@ -69,16 +69,16 @@ if(objetoPila != null){
             contenedorNombre.removeChild(contenedorNombre.firstChild);
         }
         let mensaje = document.createTextNode("p")
-        mensaje.textContent = "Nombre: PILA, Tiempo de descomposición: entre 500 y 1000 años"
+        mensaje.textContent = "Nombre: ALBAHACA"
         contenedorNombre.appendChild(mensaje);
         
     }
     )
 }
 
-if(objetoPlastico != null){
+if(objetoMenta != null){
 
-    objetoPlastico.addEventListener("click",
+    objetoMenta.addEventListener("click",
     function mostrarInformacion() {
 
 
@@ -87,7 +87,7 @@ if(objetoPlastico != null){
         contenedorNombre.removeChild(contenedorNombre.firstChild);
     }
     let mensaje = document.createTextNode("p")
-    mensaje.textContent = "Nombre: BOTELLA DE PLÁSTICO, Tiempo de descomposición: 150 años"
+    mensaje.textContent = "Nombre: MENTA"
     contenedorNombre.appendChild(mensaje);
 
     }
@@ -95,9 +95,9 @@ if(objetoPlastico != null){
 }
 
 
-if(objetoZapatilla != null){
+if(objetoOregano != null){
 
-    objetoZapatilla.addEventListener("click",
+    objetoOregano.addEventListener("click",
     function mostrarInformacion() {
   
         
@@ -106,7 +106,7 @@ if(objetoZapatilla != null){
             contenedorNombre.removeChild(contenedorNombre.firstChild);
         }
         let mensaje = document.createTextNode("p")
-        mensaje.textContent = "Nombre: ZAPATILLA, Tiempo de descomposición: 200 años"
+        mensaje.textContent = "Nombre: ORÉGANO"
         contenedorNombre.appendChild(mensaje);
         
 
