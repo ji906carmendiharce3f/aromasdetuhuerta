@@ -6,6 +6,9 @@ let objetoAlbahaca = document.querySelector("#Albahaca")
 let objetoPerejil = document.querySelector("#Perejil")
 let objetoOregano = document.querySelector("#Oregano")
 
+let objetoAgua = document.querySelector("#Agua")
+let objetoSol = document.querySelector("#Sol")
+let objetoBotella = document.querySelector("#Botella")
 
 if(objetoPerejil != null){
     objetoPerejil.addEventListener("click",
@@ -114,3 +117,56 @@ if(objetoOregano != null){
 )
 }
 
+if(objetoSol != null){
+
+    objetoSol.addEventListener("click",
+    function mostrarInformacion() {
+
+
+        let contenedorNombre = document.querySelector("#Mensaje")
+    while (contenedorNombre.hasChildNodes()) {
+        contenedorNombre.removeChild(contenedorNombre.firstChild);
+    }
+    let mensaje = document.createTextNode("p")
+    mensaje.textContent = "Nombre: SOL"
+    contenedorNombre.appendChild(mensaje);
+
+    }
+)
+}
+
+if(objetoAgua != null){
+
+    objetoAgua.addEventListener("click",
+    function mostrarInformacion() {
+
+
+        let contenedorNombre = document.querySelector("#Mensaje")
+    while (contenedorNombre.hasChildNodes()) {
+        contenedorNombre.removeChild(contenedorNombre.firstChild);
+    }
+    let mensaje = document.createTextNode("p")
+    mensaje.textContent = "Nombre: AGUA"
+    contenedorNombre.appendChild(mensaje);
+
+    }
+)
+}
+
+if(objetoBotella != null){
+
+    objetoBotella.addEventListener("click",
+    function mostrarInformacion() {
+
+
+        let contenedorNombre = document.querySelector("#Mensaje")
+    while (contenedorNombre.hasChildNodes()) {
+        contenedorNombre.removeChild(contenedorNombre.firstChild);
+    }
+    let mensaje = document.createTextNode("p")
+    mensaje.textContent = "Nombre: BOTELLA"
+    contenedorNombre.appendChild(mensaje);
+
+    }
+)
+}
